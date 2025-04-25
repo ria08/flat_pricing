@@ -32,30 +32,25 @@ Created a new column flat type in excel then copied the type of flat substring f
    
    ## Derived Insights from Power BI
 
-   1. MOST POPULAR FLAT TYPE
-   
-   3 BHK with 9724 listings
+MOST POPULAR FLAT TYPE: 3 BHK with 9724 listings
 
-   2. CITY WITH MOST LISTINGS
-
-    Gurgaon
-
-
-   3. FLAT DISTRIBUTION BY PRICE
+CITY WITH MOST LISTINGS: Gurgaon
+ 
+FLAT DISTRIBUTION BY PRICE
 
 Mid-Range flat makes for the largest share of flat types.
 
-   4. FLAT DISTRIBUTION BY OWNERSHIP
+FLAT DISTRIBUTION BY OWNERSHIP
 
-Majority of flats are freehold
+Majority of flats are freehold. This column is further drilled down to showcase transaction for each ownership. In freehold, resale properties hold highest position.
 
-   5. AVERAGE PRICE PER LOCATION
+AVERAGE PRICE PER LOCATION
 
 Average price of flats in Mumbai is highest and lowest in Nagpur.
 
-   6. AVERAGE PRICE PER FURNISHING
+AVERAGE PRICE PER FURNISHING
 
-Average price of flata is highest for semi furnished flats.
+Average price of flats is highest for semi furnished flats.
 
-   7. SLICERS USED: Flat type, floor number, bathroom, balcony.
+SLICERS USED: Flat type, floor number, bathroom, balcony.
 
