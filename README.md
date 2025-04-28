@@ -36,21 +36,25 @@ MOST POPULAR FLAT TYPE: 3 BHK with 9724 listings
 
 CITY WITH MOST LISTINGS: Gurgaon
  
-FLAT DISTRIBUTION BY PRICE
+FLAT DISTRIBUTION BY PRICE: Mid-Range flat makes for the largest share of flat types.
 
-Mid-Range flat makes for the largest share of flat types.
+FLAT DISTRIBUTION BY OWNERSHIP: Majority of flats are freehold. This column is further drilled down to showcase transaction for each ownership. In freehold, resale properties hold highest position.
 
-FLAT DISTRIBUTION BY OWNERSHIP
+AVERAGE PRICE PER LOCATION: Average price of flats in Mumbai is highest and lowest in Nagpur.
 
-Majority of flats are freehold. This column is further drilled down to showcase transaction for each ownership. In freehold, resale properties hold highest position.
-
-AVERAGE PRICE PER LOCATION
-
-Average price of flats in Mumbai is highest and lowest in Nagpur.
-
-AVERAGE PRICE PER FURNISHING
-
-Average price of flats is highest for semi furnished flats.
+AVERAGE PRICE PER FURNISHING: Average price of flats is highest for semi furnished flats.
 
 SLICERS USED: Flat type, floor number, bathroom, balcony.
+
+  EXECUTIVE SUMMARY FOR REAL ESTATE MARKET:
+
+🏙️ Prioritize Gurgaon for higher advertising spend and competitive strategies as this city has the maximum listings. 
+
+📢 Increase focus on advertising 3BHK flats so that supply can match the demand.
+
+💰 Offer attractive deals in the mid-range segment to convert potential buyers into successful homeowners. 
+
+📝  Increase the listings of resale properties under freehold ownership as they are easier to transact.
+
+🏡 Focus on city specific campaigns like luxury marketing in Mumbai and affordable housing in Nagpur.
 
