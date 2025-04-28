@@ -31,7 +31,7 @@ Created a new column flat type in excel then copied the type of flat substring f
 7. Added new column called floor number derived from floor for analysis in BI.
 8. Dropped some more columns which didnt seem very important. Final columns were Index, Flat type, Location, Status, Floor, Transaction, Furnishing, Bathroom, Balcony, Ownership, Amount num, Amount range, and floor number.
    
-   ## Derived Insights from Power BI
+## Derived Insights from Power BI
 
 <b>Most Popular Flat Type</b>: 3 BHK with 9724 listings
 
@@ -47,7 +47,7 @@ Created a new column flat type in excel then copied the type of flat substring f
 
 <b>Slicers used</b>: Flat type, floor number, bathroom, balcony.
 
-  ## EXECUTIVE SUMMARY:
+ ## Executive Summary:
 
 🏙️ Prioritize Gurgaon for higher advertising spend and competitive strategies as this city has the maximum listings. 
 
