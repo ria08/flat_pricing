@@ -4,6 +4,7 @@
 - [Changes in Excel](#changes-in-excel)
 - [Data Cleaning in My SQL](#data-cleaning-in-my-sql)
 - [Derived Insights from Power BI](#derived-insights-from-power-bi)
+- [Executive Summary](#executive-summary)
 
    
 
@@ -32,21 +33,21 @@ Created a new column flat type in excel then copied the type of flat substring f
    
    ## Derived Insights from Power BI
 
-MOST POPULAR FLAT TYPE: 3 BHK with 9724 listings
+<b>Most Popular Flat Type</b>: 3 BHK with 9724 listings
 
-CITY WITH MOST LISTINGS: Gurgaon
+<b>City with Most Listings</b>: Gurgaon
  
-FLAT DISTRIBUTION BY PRICE: Mid-Range flat makes for the largest share of flat types.
+<b>Flat Distribution by Price</b>: Mid-Range flat makes for the largest share of flat types.
 
-FLAT DISTRIBUTION BY OWNERSHIP: Majority of flats are freehold. This column is further drilled down to showcase transaction for each ownership. In freehold, resale properties hold highest position.
+<b>Flat Distribution by Ownership</b>: Majority of flats are freehold. This column is further drilled down to showcase transaction for each ownership. In freehold, resale properties hold highest position.
 
-AVERAGE PRICE PER LOCATION: Average price of flats in Mumbai is highest and lowest in Nagpur.
+<b>Average Price by Location</b>: Average price of flats in Mumbai is highest and lowest in Nagpur.
 
-AVERAGE PRICE PER FURNISHING: Average price of flats is highest for semi furnished flats.
+<b>Average Price per Furnishing</b>: Average price of flats is highest for semi furnished flats.
 
-SLICERS USED: Flat type, floor number, bathroom, balcony.
+<b>Slicers used</b>: Flat type, floor number, bathroom, balcony.
 
-  EXECUTIVE SUMMARY FOR REAL ESTATE MARKET:
+  ## EXECUTIVE SUMMARY:
 
 🏙️ Prioritize Gurgaon for higher advertising spend and competitive strategies as this city has the maximum listings. 
 
