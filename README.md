@@ -1,101 +1,73 @@
+# House Price Data Analysis
 
-# 🏠 House Price Data Analysis Project
+## Overview
+This repository contains a structured analysis of a Kaggle housing dataset using Excel, MySQL, and Power BI. The work covers data preparation, cleaning, and visualization to surface insights on flat types, pricing, and regional patterns.
 
-A full-stack data analysis project using Excel, MySQL, and Power BI on a housing dataset from Kaggle. This project covers data cleaning, transformation, and visual analysis to generate actionable real estate insights.
+- **Dataset**: Kaggle House Prices (Juhibhojani)
+- **Rows**: 100,688
+- **Focus**: Clean raw listings and derive real estate insights
 
----
+## Repository Contents
+| File | Description |
+| --- | --- |
+| `sql cleaning.sql` | SQL steps for cleaning and transforming the dataset in MySQL. |
+| `house_price_visualisation.pbix` | Power BI report with visuals and slicers. |
+| `README.md` | Project documentation. |
 
-## 📑 Table of Contents
+## Workflow Summary
+### 1) Excel Preprocessing
+- Extracted **Flat Type** (e.g., 2BHK, 3BHK) from `title`.
+- Dropped the original `title` column.
+- Exported the cleaned data to CSV for MySQL import.
 
-- [📂 Introduction](#-introduction)
-- [📊 Changes in Excel](#-changes-in-excel)
-- [🧹 Data Cleaning in MySQL](#-data-cleaning-in-mysql)
-- [📈 Derived Insights from Power BI](#-derived-insights-from-power-bi)
-- [📝 Executive Summary](#-executive-summary)
-- [📚 Key Learnings](#-key-learnings)
-- [🛠️ Tools Used](#-tools-used)
+### 2) MySQL Cleaning
+- Imported data using **Table Import Wizard**.
+- Created a **duplicate table** for safety.
+- Removed **77,103 duplicate rows**.
+- Dropped columns with high null rates: `carpet_area`, `society`, `car_parking`, `ownership`.
+- Retained `balcony` due to decision-making relevance.
+- Filled missing values in: `status`, `floor`, `transaction`, `furnishing`, `ownership`, `balcony`.
+- Normalized `Amount` into `Amount num`.
+- Added `Amount range` bins for segmentation.
+- Derived `floor number` from the `floor` text.
 
----
+**Final analysis columns**:
+```
+Index, Flat type, Location, Status, Floor, Transaction, Furnishing,
+Bathroom, Balcony, Ownership, Amount num, Amount range, Floor number
+```
 
-## 📂 Introduction
+### 3) Power BI Analysis
+**Key visuals**:
+- Popular flat type
+- Listings by city
+- Price distribution by range
+- Ownership vs. transaction types
+- Average price by location and furnishing
 
-Performed data cleaning and analysis on a **house price dataset** sourced from Kaggle:  
-🔗 [Kaggle Dataset - House Prices](https://www.kaggle.com/datasets/juhibhojani/house-price)
+**Slicers**: Flat Type, Floor Number, Bathroom, Balcony
 
-- **Total Rows**: 100,688
-- **Objective**: Clean and structure raw data for meaningful analysis on real estate trends, pricing patterns, and regional performance.
+## Insights
+- **Most popular flat type**: 3 BHK (9,724 listings)
+- **City with most listings**: Gurgaon
+- **Price distribution**: Mid-range flats dominate
+- **Ownership**: Freehold is most common; resale leads within freehold
+- **Average price**: Highest in Mumbai, lowest in Nagpur
+- **Furnishing impact**: Semi-furnished flats show the highest average price
 
----
+## Executive Recommendations
+- Prioritize **Gurgaon** for marketing due to listing volume.
+- Emphasize **3BHK** offerings to match demand.
+- Target the **mid-range** segment to maximize conversions.
+- Promote **resale freehold** properties for faster transactions.
+- Tailor city campaigns: premium focus in Mumbai, value focus in Nagpur.
 
-## 📊 Changes in Excel
+## Tools Used
+- **Excel**: Initial transformation
+- **MySQL**: Data cleaning and normalization
+- **Power BI**: Visualization and insight derivation
+- **Kaggle**: Data source
 
-Initial transformation steps performed in Excel before importing into MySQL:
+## Dataset
+- Kaggle: https://www.kaggle.com/datasets/juhibhojani/house-price
 
-- Created a new column called **Flat Type** by extracting flat size (e.g., 2BHK, 3BHK) from the `title` column.
-- Dropped the original `title` column after extraction.
-- Saved the cleaned file as CSV for import into MySQL.
-
----
-
-## 🧹 Data Cleaning in MySQL
-
-- Imported data into MySQL using **Table Import Wizard**.
-- Created a **duplicate table** as a safe backup to avoid accidental data loss.
-- Identified and removed **77,103 duplicate rows**.
-- Dropped columns with high null values: `carpet_area`, `society`, `car_parking`, and `ownership` (after careful review).
-- Retained `balcony` column due to its potential influence on buyer decisions.
-- **Filled missing values** in key categorical fields: `status`, `floor`, `transaction`, `furnishing`, `ownership`, and `balcony`.
-- Normalized the `Amount` column for calculation and created a new binned column **Amount Range** for segmentation.
-- Created a derived column `floor number` from the `floor` text.
-- Final columns used in analysis:
-
-  ```
-  Index, Flat type, Location, Status, Floor, Transaction, Furnishing,
-  Bathroom, Balcony, Ownership, Amount num, Amount range, Floor number
-  ```
-
----
-
-## 📈 Derived Insights from Power BI
-
-Visualizations and slicers were used to bring out key patterns in the data:
-
-- **📌 Most Popular Flat Type**: 3 BHK with 9,724 listings
-- **🏙️ City with Most Listings**: Gurgaon
-- **💰 Flat Distribution by Price**: Mid-range flats form the largest share
-- **📜 Flat Distribution by Ownership**: Majority are freehold properties; within freehold, **resale** leads
-- **📍 Average Price by Location**: Highest in Mumbai, lowest in Nagpur
-- **🛋️ Average Price per Furnishing**: Highest for **semi-furnished** flats
-
-**Slicers Used**: Flat Type, Floor Number, Bathroom, Balcony
-
----
-
-## 📝 Executive Summary
-
-- 🏙️ **Prioritize Gurgaon** for marketing efforts—it has the highest property listings.
-- 📢 **Focus on 3BHK flats**—they are the most in demand.
-- 💰 **Promote mid-range flats**—offering deals in this segment can boost conversions.
-- 📝 **List more resale properties under freehold**—simpler and quicker to transact.
-- 🏡 **Target city-specific audiences**: luxury in Mumbai, budget-conscious in Nagpur.
-
----
-
-## 📚 Key Learnings
-
-- Handling large datasets in SQL with efficient cleaning strategies.
-- Detecting and safely removing duplicate records using subqueries and table backups.
-- Column transformation techniques in Excel and SQL.
-- Data normalization and segmentation for dashboard-ready output.
-- Creating impactful visual storytelling with Power BI using slicers and calculated fields.
-
----
-
-## 🛠️ Tools Used
-
-- **Excel** – Initial transformation and manual cleaning
-- **MySQL** – Data wrangling and cleaning
-- **Power BI** – Data visualization and insight derivation
-- **Kaggle** – Dataset source
-
----
